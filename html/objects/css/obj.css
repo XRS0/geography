@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #161616;
+}
+
+:root {
+	--index: calc(1vw + 1vh);
+}
+
+@font-face {
+	font-family: unbounded-light;
+	src: url(../../fonts/Unbounded-Light.ttf);
+}
+
+@font-face {
+	font-family: unbounded-regular;
+	src: url(../../fonts/Unbounded-Regular.ttf);
+}
+
+
+main {
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+main h1 {
+    font-family: unbounded-regular;
+    font-size: calc(var(--index) * 2.5);
+    margin-top: calc(var(--index) * 7);
+    margin-bottom: calc(var(--index) * 5);
+}
+
+.image-container {
+    width: 100%;
+    height: calc(var(--index) * 13); 
+    overflow: hidden; 
+    position: relative; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    border-bottom: 2px solid white;
+
+}
+
+.image-container img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    object-position: center; 
+}
+
+main hr {
+    border: 1px solid white; 
+    width: calc(var(--index) * 80);
+    margin-top: calc(var(--index) * 2);
+    margin-bottom: calc(var(--index) * 2);
+}
+
+.text-container {
+    width: calc(var(--index) * 30);
+    font-size: calc(var(--index) * 1.2);
+    font-family: unbounded-light;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 100px;
+    margin-bottom: calc(var(--index) * 8);
+}
+
+.text-container p {
+    margin-bottom: calc(var(--index) * 1);
+}
+
+.text-container button {
+    width: calc(var(--index) * 12);
+    font-family: Arial;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: calc(var(--index) * .91);
+    letter-spacing: -.02vw;
+    padding: calc(var(--index) * .6) calc(var(--index) * 1.15);
+    background-color: transparent;
+    color: #fff;
+    border-radius: 10em;
+    border: rgb(255 255 255 / .4) 3px solid;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.07s ease-out;
+}
+
+.text-container button:hover {
+    background-color: #3756d2c2;
+}
+
+.text-container button:active {
+    background-color: #3756d27b;
+}

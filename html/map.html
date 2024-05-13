@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/map.css">
+    <title>Karely map</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+    <script defer>moveToCoordinates(document.write(new URLSearchParams(window.location.search).get('coords')));</script>
+</head>
+<body>
+
+    
+    <div id="new-map" class="map"></div> 
+    <button class="butt" onclick="moveToCoordinates(63.07452357804151, 32.62295645898469)">Гора "Воттовара"</button>
+
+
+    <script src="js/map/placemarkers.js"></script>
+    <script src="js/map/polygon.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=7992b5ba-2d4e-4fe1-ae6d-0e7784f0979d&lang=ru_RU"></script>
+    <script src="js/map/index.js"></script>
+    
+    
+</body>
+</html>
