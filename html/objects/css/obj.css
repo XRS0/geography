@@ -72,11 +72,13 @@ main hr {
 }
 
 .text-container p {
+    width: calc(var(--index) * 45);
+    font-size: calc(var(--index) * .91);
     margin-bottom: calc(var(--index) * 1);
 }
 
 .text-container button {
-    width: calc(var(--index) * 12);
+    width: calc(var(--index) * 15);
     font-family: Arial;
     font-weight: 300;
     text-transform: uppercase;
